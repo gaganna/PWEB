@@ -2,17 +2,115 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<h1>TUTORIAL-PRIMEIRO CONTATO COM O GITHUB</h1>
 </head>
 <body>
-	<h1>Projeto git hub</h1>
-	<h2>Passos para utilizar o git hub</h2>
-	<h3>Criar o usuario no git hub</h3>
-	<ul>
-		<li>Acessar o site git hub</li>
-	</ul>
-	<h3>Criar um repositorio no git hub</h3>
-	<h3>Clonar o repositprio</h3>
-	<h3>Realizar o comit (envio) de alterações para o git hub</h3>
+	<section>
+		<details>
+			<summary>Criando uma conta no github</summary>
+			<li>- Busque no seu navegador o site do git hub, coloque seus
+				dados para criar uma conta nova</li>
+			<li>- Para criar um repositório clique em "create a new
+				repository", depois nomeie o repositório em "repository name" e
+				escolha se vai deixar privado ou público.</li>
+		</details>
+		<details>
+			<summary>Configurações dentro da ide</summary>
+			<li>Dentro da sua IDE (eclipse), já com o Git devidamente
+				instalado, vá no canto superior esquerdo e clique na opção "window",
+				na barra de pesquisa escreva git, logo você vai perceber que na
+				opção " Default repository folder" o campo de texto está vazio,
+				então clique em "browse", e será redirecionado para o seu explorador
+				de arquivos, mais especificamente para a sua pasta de usuário, nela
+				crie uma pasta nova com o nome de git para ser seu repositório. No
+				eclipse, note que o campo vazio foi preenchido com o local da pasta,
+				onde ficarão os seus projetos que serão clonados e enviados para o
+				git hub. Agora é só clicar no botão de "apply and close".</li>
+		</details>
+		<details>
+			<summary>Organizando o ambiente</summary>
+			<li>- Para que o git apareça nas suas guias, siga novamente
+				esses passos: window-> show view->other-> e digite git, clique em
+				git staging e depois open, assim o ambiente irá aparecer juntamente
+				com as informações dos estágios do seu projeto, fazendo esse mesmo
+				processo adicione o git repositories e irá mostrar as suas pastas de
+				repositório.</li>
+		</details>
+		<details>
+			<summary>Enviando projeto</summary>
+			<li>- Na plataforma do git hub crie um novo repositório com o
+				nome desejado e com o token já gerado, volte para o eclipse para
+				linkar essas duas plataformas</li>
+			<li>- Vá em window-> preference, procure por git e selecione
+				configuration, para adicionar um novo user, vá em Add Entry, coloque
+				seu nome de usuário e sua chave token.</li>
+			<li>- Agora para fazer o envio do projeto, clique com o botão
+				direito em seu projeto, clique em team e depois em share project, na
+				janela que aparecer, escolha create para decidir o repositório, por
+				fim clique no botão finish duas vezes. Dessa forma, sua pasta será
+				automaticamente criada, com o seu projeto vinculado à sua máquina, é
+				dado o momento de enviar as modificações do projeto para o seu local
+				remoto.</li>
+			<li>- Clique com o botão direito no seu projeto, vá em team ->
+				add to Index, na barra de tarefas na área de " commit message" você
+				pode deixar uma mensagem simbolizando o que foi feito, para enviar
+				diretamente para a sua pasta e ao git hub, clique no botão " commit
+				and push", na janela de configuração que aparece, coloque o endereço
+				do seu git hub na URI e automaticamente seus dados serão
+				preenchidos, clique em preview, depois em push que fará a ação do
+				envio para o github.</li>
+			<li>- Depois, basta conferir no seu perfil do github na aba
+				repositório e seu projeto estará lá.</li>
+
+		</details>
+	</section>
 </body>
 </html>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+	color: #fff;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: #282828;
+}
+
+section {
+	width: 100%;
+	max-width: 100%;
+}
+
+section details {
+	font-size: 18px;
+}
+
+section details summary {
+	background-color: #800080;
+	padding: 2%;
+	border-bottom: 2px solid #282828;
+}
+
+section details p {
+	background-color: #282828;
+	padding: 2%;
+	border-bottom: 2px solid #282828;
+	transition: all .5s;
+}
+
+h1 {
+	font-family: 'georgia';
+	font-size: 28px;
+	padding: 2%;
+	margin: 20px 20px 20px 20px;
+	text-align: center;
+}
+</style>
