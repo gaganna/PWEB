@@ -8,5 +8,9 @@ public interface LivroService {
 	public List<Livro> listarLivros();
 
 	public void inserir(Livro livro);
+
+	public Livro obterLivro(Long id);
+
+	public void alterarLivro(Livro livro);
 	
 }
