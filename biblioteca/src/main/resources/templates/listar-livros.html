@@ -41,7 +41,7 @@
 						<td data-th-text="${Lvr.autor}"></td>
 						<td>
 							<a class="btn btn-success" th:href= "@{/livros/alterar/{id}(id=${Lvr.id})}" >Alterar</a>
-							<a class= "btn btn-danger">Excluir</a>
+							<a class= "btn btn-danger" th:href= "@{/livros/excluir/{id}(id=${Lvr.id})}">Excluir</a>
 					</tr>
 				</tbody>
 			</table>

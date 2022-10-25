@@ -38,4 +38,11 @@ public class LivroServiceImpl implements LivroService {
 		this.livroRepository.save(livro);
 	}
 
+
+	@Override
+	public void excluirLivro(Long id) {
+		this.livroRepository.deleteById(id);
+		
+	}
+
 }
